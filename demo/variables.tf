@@ -1,5 +1,5 @@
 # main creds for AWS connection
-variable "aws_access_key" {
+variable "aws_access_key_id" {
   description = "AWS access key"
 }
 
