@@ -14,7 +14,7 @@ variable "region" {
 
 variable "availability_zone" {
   description = "availability zone used for the demo"
-  default = "us-west-2c"
+  default = "us-east-1c"
 }
 
 # Special AMI for ECS container Service
