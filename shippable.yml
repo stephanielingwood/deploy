@@ -6,4 +6,7 @@ infra:
             region: us-east-1
 
 env:
-    - secure: pZdFDlpFrrTOsp6w2Xmpn1yTO6dJJmNEA+cG2JQwB2RI3LUA2Qh/a4ZMVMybFaNS3GKkqKVhoueCTrZxgIsK+TSVZfG4b32KFkRUSVAuDnc5YS6E1h8JEWfpUkWLMat82hNI234E/Wjq0BmiH+gu73xE7PgrIch0nnrsMVbyis1KZ3E/E/bo83Xi8ksk0v9Sxvoupj7jPvyBaB1ec1QRhmqs0FZr3+XAi3yi7bR1MIVNPHE9o3+Swn6ZSV7Hur5eVhUYNr0zYqJE1Vapq3AFhazFcq+QSWUdCa2z5l1TjZNWXryNNZHRor5SwUVnZzKTTp3Yq48iFenKi24tlccIMA==
+    - secure: DLvrEza9Zr06DN6H8ukWdlnfoYbDTEsyenVmfJMD9OxdLatriAKfgCj385FhyXrLQf1dqZzks9FsM80wZElFjFmZGzqPF2919ZVA3AK/g9QFmDwrYuqGj3um1FcTTGqzErGHbJbwiNC5qeqyQRa7i3LNgofki1BfCz1d1zTTHEMs7oncVGH34E8RULGBkTtpQk/c8ihT3pvYt0+FVsIi9Qd+E4epuy17aqbJtV+YzIZFfVqOYu5HNstNSK8C0HSQKGfCbOTUH0UdL3xPH1MdcDoxrqX6I9bNJSKa/tV0ayIdbcfCdPsprGVQwq/r+nk+lVIxTc7DNeWKDdYRBipOgg==
+
+script:
+    - echo $SECRET
