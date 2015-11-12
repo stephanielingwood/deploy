@@ -15,8 +15,8 @@ script:
 before_prov:
     - echo 'look! the before_prov section'
 
-on_prov_success
+on_prov_success:
     - echo 'hi, I am on prov success'
 
-on_prov_failure
+on_prov_failure:
     - echo 'oh no, I failed. so sad.'
