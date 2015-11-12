@@ -7,4 +7,4 @@ infra:
 
 
 env:
-    - - MY_VAR=myreallycoolvariable MY_VAR_TOO=rainbows_and_unicorns
+    - MY_VAR=myreallycoolvariable MY_VAR_TOO=rainbows_and_unicorns
