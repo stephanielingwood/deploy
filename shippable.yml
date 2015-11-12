@@ -19,4 +19,4 @@ on_prov_success:
     - echo 'hi, I am on prov success'
 
 on_prov_failure:
-    - echo 'oh no, I failed.'
+    - echo 'oh no, I failed. oh no.'
