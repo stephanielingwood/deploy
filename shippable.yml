@@ -18,5 +18,5 @@ before_prov:
 on_prov_success:
     - echo 'hi, I am on prov success'
 
-on_prov_failure:
+on_prov_error:
     - echo 'oh no, I failed.'
