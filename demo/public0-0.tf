@@ -70,9 +70,9 @@ resource "aws_elb" "demoWWWLoadBalancer" {
 }
 
 # API Load balancer
-resource "aws_elb" "demoAAPILoadBalancer" {
+resource "aws_elb" "demoAPILoadBalancer" {
 
-  name = "demoAAPILoadBalancer"
+  name = "demoAPILoadBalancer"
   subnets = [
     "${aws_subnet.demoPubSN0-0.id}"]
   security_groups = [
