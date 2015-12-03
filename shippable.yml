@@ -4,3 +4,20 @@ infra:
             provider: ECS
             type: terraform
             region: us-east-1
+
+env:
+    - MY_VAR=my_variable MY_VAR_TOO=unicorns_and_rainbows
+    # - secure: DLvrEza9Zr06DN6H8ukWdlnfoYbDTEsyenVmfJMD9OxdLatriAKfgCj385FhyXrLQf1dqZzks9FsM80wZElFjFmZGzqPF2919ZVA3AK/g9QFmDwrYuqGj3um1FcTTGqzErGHbJbwiNC5qeqyQRa7i3LNgofki1BfCz1d1zTTHEMs7oncVGH34E8RULGBkTtpQk/c8ihT3pvYt0+FVsIi9Qd+E4epuy17aqbJtV+YzIZFfVqOYu5HNstNSK8C0HSQKGfCbOTUH0UdL3xPH1MdcDoxrqX6I9bNJSKa/tV0ayIdbcfCdPsprGVQwq/r+nk+lVIxTc7DNeWKDdYRBipOgg==
+
+script:
+    - echo $SECRET
+
+deploy:
+#     before_prov:
+#         - echo 'look! the before_prov section'
+    
+    on_prov_success:
+        - echo 'hi, I am on prov success'
+    
+#     on_prov_error:
+#         - echo 'oh no, I failed.'

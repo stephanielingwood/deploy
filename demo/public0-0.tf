@@ -42,9 +42,9 @@ resource "aws_security_group" "demoWebSG" {
 # ========================Load Balancers=======================
 
 # WWW Load balancer
-resource "aws_elb" "demoWWWLb" {
+resource "aws_elb" "demoWWWLoadBalancer" {
 
-  name = "demoWWWLb"
+  name = "demoWWWLoadBalancer"
   subnets = [
     "${aws_subnet.demoPubSN0-0.id}"]
   security_groups = [
@@ -70,9 +70,9 @@ resource "aws_elb" "demoWWWLb" {
 }
 
 # API Load balancer
-resource "aws_elb" "demoAAPILb" {
+resource "aws_elb" "demoAPILoadBalancer" {
 
-  name = "demoAAPILb"
+  name = "demoAPILoadBalancer"
   subnets = [
     "${aws_subnet.demoPubSN0-0.id}"]
   security_groups = [
