@@ -11,13 +11,3 @@ env:
 
 script:
     - echo $SECRET
-
-deploy:
-#     before_prov:
-#         - echo 'look! the before_prov section'
-    
-    on_prov_success:
-        - echo 'hi, I am on prov success'
-    
-#     on_prov_error:
-#         - echo 'oh no, I failed.'
