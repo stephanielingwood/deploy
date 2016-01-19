@@ -1,6 +1,6 @@
 # Setup our google provider
 provider "google" {
-  credentials = "${var.JSON_key}"
+  # need to provide a json object for GOOGLE_CREDENTIALS in the environment
   project     = "${var.project_name}"
   region      = "${var.region}"
 }
