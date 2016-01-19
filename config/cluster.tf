@@ -12,5 +12,4 @@ resource "google_container_cluster" "trriplejayCL" {
   node_config {
     machine_type = "f1-micro"
   }
-
 }

@@ -18,7 +18,7 @@ variable "cluster_name" {
   default = "trriplejay-test"
 }
 
-variable "account_json" {
+variable "JSON_key" {
   description = "the location of the service account json for creating cluster on project"
   default = "~/Downloads/account.json"
 }

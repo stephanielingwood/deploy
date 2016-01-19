@@ -1,6 +1,6 @@
 # Setup our google provider
 provider "google" {
-  credentials = "${file(var.account_json)}"
+  credentials = "${var.JSON_key}"
   project     = "${var.project_name}"
   region      = "${var.region}"
 }
