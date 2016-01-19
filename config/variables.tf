@@ -20,4 +20,5 @@ variable "cluster_name" {
 
 variable "JSON_key" {
   description = "credentials for accessing GCP.  Shippable will set a value in the ENV."
+  default = "{\"override\":\"this\"}"
 }
