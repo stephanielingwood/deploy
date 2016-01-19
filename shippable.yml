@@ -1,0 +1,21 @@
+deploy:
+  env:
+    - foo="bar"
+    - another="hello world"
+
+  before_prov:
+    - echo 'this is happening before provisioning'
+    - ls -ltra
+    - echo "value for foo is $foo"
+    - echo "$another"
+    - echo "$PEM_KEY_NAME"
+    - echo "$PEM_KEY"
+
+  on_prov_error:
+    - echo 'provisioning failed miserably'
+    - echo $foo
+
+  on_prov_success: echo 'yay, it worked!'
+
+  infra:
+    - terraform: demo
