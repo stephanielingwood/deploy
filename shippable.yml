@@ -18,4 +18,4 @@ deploy:
   on_prov_success: echo 'yay, it worked!'
 
   infra:
-    - terraform: demo
+    - terraform: config
