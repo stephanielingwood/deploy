@@ -28,7 +28,7 @@ variable "master_user_name" {
   default = "mr.yoda"
 }
 
-variable "var.master_password" {
+variable "master_password" {
   description = "set the password for the cluster for basic auth"
   default = "adoy.rm"
 }
