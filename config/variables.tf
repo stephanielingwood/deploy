@@ -22,3 +22,13 @@ variable "JSON_key" {
   description = "credentials for accessing GCP.  Shippable will set a value in the ENV."
   default = "{\"override\":\"this\"}"
 }
+
+variable "master_user_name" {
+  description = "set the username for the cluster for basic auth"
+  default = "mr.yoda"
+}
+
+variable "var.master_password" {
+  description = "set the password for the cluster for basic auth"
+  default = "adoy.rm"
+}

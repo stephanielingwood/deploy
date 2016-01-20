@@ -5,8 +5,8 @@ resource "google_container_cluster" "trriplejayCL" {
   initial_node_count = 3
 
   master_auth {
-    username = "mr.yoda"
-    password = "adoy.rm"
+    username = "${var.master_user_name}"
+    password = "${var.master_password}"
   }
 
   node_config {
