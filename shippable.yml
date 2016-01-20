@@ -2,8 +2,8 @@ deploy:
   env:
     - foo="bar"
     - another="hello world"
-    - VAR_TF_MASTER_USER_NAME=notsecure
-    - VAR_TF_MASTER_PASSWORD=needsecureENVvariables
+    - VAR_TF_master_user_name=notsecure
+    - VAR_TF_master_password=needsecureENVvariables
 
   before_prov:
     - echo 'this is happening before provisioning'
