@@ -9,7 +9,8 @@ deploy:
     - echo 'this is happening before provisioning'
     - ls -ltra
     - echo "value for foo is $foo"
-    - echo "$another"
+    - echo "$TF_VAR_master_user_name"
+    - echo "$TF_VAR_master_password"
 
   on_prov_error:
     - echo 'provisioning failed miserably'
