@@ -1,22 +1,20 @@
-infra:
-    clusters:
-        - demo:
-            provider: ECS
-            type: terraform
-            region: us-east-1
-
-env:
-    - MY_VAR=my_variable MY_VAR_TOO=unicorns_and_rainbows
-    # - secure: DLvrEza9Zr06DN6H8ukWdlnfoYbDTEsyenVmfJMD9OxdLatriAKfgCj385FhyXrLQf1dqZzks9FsM80wZElFjFmZGzqPF2919ZVA3AK/g9QFmDwrYuqGj3um1FcTTGqzErGHbJbwiNC5qeqyQRa7i3LNgofki1BfCz1d1zTTHEMs7oncVGH34E8RULGBkTtpQk/c8ihT3pvYt0+FVsIi9Qd+E4epuy17aqbJtV+YzIZFfVqOYu5HNstNSK8C0HSQKGfCbOTUH0UdL3xPH1MdcDoxrqX6I9bNJSKa/tV0ayIdbcfCdPsprGVQwq/r+nk+lVIxTc7DNeWKDdYRBipOgg==
-
-script:
-    - echo $SECRET
-
 deploy:
-    env:
-        - foo=bar
-    before_prov:
-        - echo 'about to prov'
-        - ls -latr
-    infra:
-        - terraform: demo/
+  env:
+    - foo="bar"
+    - another="hello world"
+    - TF_VAR_master_user_name=notsecure
+    - TF_VAR_master_password=needsecureENVvariables
+
+  before_prov:
+    - echo 'this is happening before provisioning'
+    - ls -ltra
+    - echo "value for foo is $foo"
+
+  on_prov_error:
+    - echo 'provisioning failed miserably'
+    - echo $foo
+
+  on_prov_success: echo 'yay, it worked!'
+
+  infra:
+    - terraform: config
