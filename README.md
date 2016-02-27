@@ -1,2 +1,2 @@
-# aye-aye-deploy
-This repository contains the files necessary to deploy Aye Aye on Amazon ECS
+# stephanielingwood/deploy
+This repository contains the files necessary to deploy a demo terraform project on Amazon ECS
